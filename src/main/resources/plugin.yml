@@ -1,0 +1,4 @@
+name: discordmin
+version: '1.0-SNAPSHOT'
+main: how.gabe.discordmin.Discordmin
+api-version: '1.21'
