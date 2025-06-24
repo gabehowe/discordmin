@@ -12,7 +12,7 @@ import org.bukkit.Bukkit
 import org.bukkit.configuration.file.FileConfiguration
 
 
-class DiscordAbstraction(private val config: FileConfiguration, private val plugin: Discordmin) {
+class DiscordManager(private val config: FileConfiguration, private val plugin: Discordmin) {
     private lateinit var kord: Kord
     private lateinit var channel: MessageChannel
     fun sendDiscordMessage(message: String) {

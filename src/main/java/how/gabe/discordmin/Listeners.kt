@@ -8,7 +8,7 @@ import org.bukkit.event.player.AsyncPlayerChatEvent
 import org.bukkit.event.player.PlayerJoinEvent
 import org.bukkit.event.player.PlayerQuitEvent
 
-class Listeners(private val discAbstraction: DiscordAbstraction) : Listener {
+class Listeners(private val discAbstraction: DiscordManager) : Listener {
     @EventHandler (priority= EventPriority.MONITOR)
     fun onPlayerChat(event: AsyncPlayerChatEvent){
         val message = "**${event.player.name}**: ${event.message}"
